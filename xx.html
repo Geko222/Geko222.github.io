@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproducir Video al Hacer Clic en una Imagen</title>
+    <style>
+        /* Estilo para centrar el video y la imagen */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        /* Ocultar el video por defecto */
+        #videoContainer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Imagen -->
+        <img id="triggerImage" src="1up.png" alt="Haz clic para reproducir el video" style="cursor:pointer; width:300px;">
+
+        <!-- Contenedor del video -->
+        <div id="videoContainer">
+            <video id="videoPlayer" width="640" height="360" controls>
+                <source src="to.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
