@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>???</title>
+    <title>Texto debajo de la imagen</title>
     <style>
         /* Estilo para centrar el video y la imagen */
         .container {
@@ -13,18 +13,28 @@
             flex-direction: column;
             margin-top: 50px;
         }
-        
+
         /* Ocultar el video por defecto */
         #videoContainer {
             display: none;
         }
+
+        /* Estilo para el texto debajo de la imagen */
+        #imageText {
+            margin-top: 10px; /* Espacio entre la imagen y el texto */
+            font-size: 18px; /* Tamaño de la fuente */
+            color: #333; /* Color del texto */
+            text-align: center; /* Centrar el texto */
+        }
     </style>
 </head>
 <body>
-    <h1>HAZ CLICK A LA TORTUGA</h1>
     <div class="container">
         <!-- Imagen -->
         <img id="triggerImage" src="1up.png" alt="Haz clic para reproducir el video" style="cursor:pointer; width:300px;">
+
+        <!-- Texto debajo de la imagen -->
+        <p id="imageText">TOCA A LA TORTUGA</p>
 
         <!-- Contenedor del video -->
         <div id="videoContainer">
